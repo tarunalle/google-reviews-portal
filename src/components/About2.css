@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    display: flex;
+    font-weight: 400;
+    color: #000;
+    font-size: 20px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    width: 450px;
+    height: 60px;
+    background: #FFE893;
+    border-bottom: 2px;
+    border-color: #F72C5B;
+    padding-bottom: 30px ;
+    border-radius: 15px;
+}
+
+
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 450px;
+    height: 50px;
+    background-color: white;
+    padding-bottom: 30px ;
+    border-radius: 15px;
+}
+
+.p_div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 a{
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+
+p{
+    font-weight: 600;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-top: 170px;
+    color: #66785F;
+}
+
+p::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #FF748B;
+    transform: scale(0);
+    transition: transform 0.7s ease;
+    border-radius: 50px;
+   
+}
+
+p:hover::after{
+    transform: scale(1);
+}
+
+.inputs{
+    display: flex;
+    position: relative;
+    border: none;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 65px;
+    background: #8EB486;
+    border-radius: 6px;
+}
+
+.inputs1{
+    background-color: #FF748B;
+    width: 800px;
+    height: 100%;
+    justify-content: center;
+    margin-left: 330px;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+
+
+.submit{
+    margin-left: 185px;
+    font-weight: 600;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.submit::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #9ABF80;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    border-radius: 50px;
+    transform-origin: left;
+}
+
+.submit:hover::after{
+    transform: scale(1);
+}
+
+input::placeholder{
+    color: white;
+    margin-left: 10px;
+}
+
+.press-button{
+    background:  linear-gradient(00deg, #F72C5B,#FF748B,#FFE893);
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-left:100px;
+    margin-top: 500px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

@@ -1,0 +1,53 @@
+
+
+.header{
+    background: linear-gradient(300deg, #F72C5B,#FF748B,#FFE893);
+    background-size: 180%, 180%;
+    animation: gradient-animation 18s easy infinite;
+    position:fixed;
+    top:0;
+    left:0;
+    padding: 20px 10%;
+    width: 100%;
+    background-color: #2e8b57;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.logo{
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left:0;
+    width: 100%;
+    height: 3px;
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+    transform: scale(1);
+}
+
